@@ -1,0 +1,141 @@
+.profile-container{
+    position: relative;
+    display: grid;
+    gap: 15px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, 500px);
+    width: 100vw;
+    height: auto;
+    overflow:scroll;
+
+}
+
+.profile-card{
+    position: relative;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color:rgba(255, 0, 0, 0.007);
+    
+    width: 400px;
+    height: 200px;
+}
+
+.decoration{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-color: #e6c47fb6;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.profile-description{
+    display:flex;
+    justify-content:flex-end;
+    align-content: center;
+    flex-direction: column;
+}
+
+.profile-card #face{
+    box-shadow: 0px 0px 18px 5px rgba(0, 0, 0, 0.685);
+    height: 40%;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.profile-social{
+    align-self: flex-end;
+    display:flex;
+    justify-content: flex-start;
+    align-items:center;
+    /* background-color: #E6C37F; */
+    width: 100%;
+    height: 50px;
+}
+
+.profile-social img{
+    height: 60%;
+    margin-right: 50px;
+    transition: all 0.5s;
+}
+
+.profile-social img:hover{
+    border-bottom: 1px black;
+    transform: translateY(10%);
+}
+
+p.name{
+    font-size: 3vw;
+}
+
+p.title{
+    font-style: italic;
+    font-size: 2vw;
+    color: green;
+}
+
+p.description{
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 768px){
+    .profile-container{
+        grid-template-columns: 1fr 1fr;
+        width: 100vw;
+        height: 90vh;
+    }
+    .profile-card{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .profile-card #face{
+        box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.473);
+        height: 30%;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    .profile-description{
+        gap: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .profile-social{
+        align-self:unset;
+        display:flex;
+        justify-content: space-evenly;
+        align-items:center;
+        width: auto;
+        height: 50px;
+    }
+
+    .profile-social img{
+        margin-right: 0;
+
+    }
+
+    .decoration{
+        width: 100%;
+        height: 20%;
+    }
+
+    p.name{
+        font-size: 5vw;
+    }
+    
+    p.title{
+        font-style: italic;
+        font-size: 4vw;
+        color: green;
+    }
+    
+    p.description{
+        font-size: 3vw;
+    }
+}

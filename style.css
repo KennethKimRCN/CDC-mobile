@@ -223,29 +223,8 @@ footer{
 }
 
 #members{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-content: space-around;
-    background-color: rgba(0, 0, 255, 0.349);
-    height: 100vh;
+    height: auto;
 }
-
-.member-photo{
-    box-shadow: 0px 0px 15px 11px rgba(0,0,0,0.42);
-    height: 100px;
-    width: 100px;
-    background-color:rgba(139, 69, 19, 0.349);
-    border-radius: 5px;
-    transition: 1s;
-}
-
-.member-photo:hover{
-    background: chartreuse;
-    height: 40vh;
-    width: 80vw;
-}
-
 
 #qna{
     display: flex;
